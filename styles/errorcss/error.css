@@ -1,0 +1,31 @@
+/* stijlregels die voor beide errorpagina's van toepassing zijn */
+/*Niels Cuyvers*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 5rem;
+}
+
+p {
+    padding-bottom: 30px;
+}
+
+i {
+    font-size: 4rem;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+/*Niels Cuyvers*/

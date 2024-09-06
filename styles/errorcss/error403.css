@@ -1,0 +1,89 @@
+/* stijlregels die enkel voor 403 van toepassing zijn */
+/*Niels Cuyvers*/
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#pStopAnimatie {
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#stopKnop {
+    font-size: 2rem;
+}
+
+.ronddraaien {
+    animation: draaien;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+.stop {
+    animation-play-state: paused;
+}
+
+.start {
+
+    animation-play-state: running;
+}
+
+img{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+@keyframes draaien {
+    0% {
+        transform: rotate(0deg);
+        background-color: transparent;
+        color: #000;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        background-color: transparent;
+        color: #f00;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: transparent;
+        color: #000;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    img{
+        filter: none;
+    }
+
+    @keyframes draaien {
+        0% {
+            transform: rotate(0deg);
+            background-color: transparent;
+            color: #000;
+        }
+
+        50% {
+            transform: rotate(180deg);
+            background-color: transparent;
+            color: #f00;
+        }
+
+        100% {
+            transform: rotate(360deg);
+            background-color: transparent;
+            color: #000;
+        }
+    }
+}
+/*Niels Cuyvers*/

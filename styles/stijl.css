@@ -1,0 +1,494 @@
+/*Niels Cuyvers*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #1e2025;
+    color: #e7e6e3;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+nav li a:link,
+nav li a:visited {
+    color: white;
+}
+
+nav li a:hover {
+    color: grey;
+}
+
+nav li a:active {
+    color: white;
+}
+
+.navbar-position {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.navbar-position .navbar-nav {
+    flex-direction: row
+}
+
+header{
+    padding-top: 40px;
+}
+
+h1, h2, h3 {
+    font-family: Merriweather, sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+
+p {
+    padding: 20px;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 20px;
+    padding: 20px;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: start;
+}
+
+h3 {
+    padding: 5px;
+    margin: 5px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+
+.blok {
+    margin: 20px;
+    padding: 0px;
+    background-color: #26282d;
+    color: #e7e6e3;
+    /*height: 300px;*/
+    text-align: center;
+}
+
+.blok p {
+    margin: 20px;
+}
+
+.modal .blok {
+    padding: 5px;
+}
+
+#intro {
+    padding: 20px;
+}
+
+#wieBenIk .blok {
+}
+
+#wieBenIk a{
+    text-decoration: none;
+}
+
+.i-cv{
+    position: relative;
+}
+
+.i-cv span{
+    padding: 0px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    font-size: 25%;
+    filter: invert(100%);
+}
+
+.introTekst {
+    padding: 10px;
+    text-align: justify;
+}
+
+.stageTekst {
+    padding: 10px;
+    text-align: justify;
+}
+
+.stage-list-item a:link,
+.stage-list-item a:visited {
+    background-color: #e7e6e3;
+    color: #474643 ;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.stage-list-item a:focus{
+    filter: brightness(55%);
+}
+.stage-list-item a:hover {
+    -webkit-filter: invert(1);
+    filter: brightness(75%);
+}
+
+#PVA, #verslag, #reflectie{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+nav li a:hover {
+    color: grey;
+}
+
+nav li a:active {
+    color: white;
+}
+
+.categorie {
+    border-top: 1px solid #fff;
+}
+
+.projectDescriptie {
+    padding: 20px;
+}
+
+.blurFilter {
+    filter: blur(5px);
+}
+
+#wieBenIk img {
+    border-radius: 50%;
+}
+
+#content img {
+    padding: 0px !important;
+}
+
+.projecten a:link {
+    background-color: #26282d;
+    color: #e7e6e3;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.projecten a:visited {
+    background-color: #26282d;
+    color: #e7e6e3;
+}
+
+.projecten a:focus,
+.projecten a:hover {
+    animation: focus;
+    animation-duration: 0.5s;
+    background-color: #e7e6e3;
+    color: #26282d;
+}
+
+#content ul li ul {
+    padding: 0px !important;
+    transition: all 1s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#content p {
+    padding: 5px;
+    margin: 0px;
+    line-height: 150%;
+}
+
+figure {
+    margin: 10px;
+    padding: 10px 30px;
+}
+
+article section p {
+    text-align: start;
+}
+
+footer {
+    padding: 10px;
+    height: 60px;
+    background-color: #26282d;
+}
+
+footer h3 {
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.i-link:link,
+.i-link:visited {
+    background-color: transparent !important;
+    color: #e7e6e3 !important;
+    font-weight: bold !important;
+}
+
+.i-link:focus{
+    filter: brightness(55%);
+}
+.i-link:hover {
+    -webkit-filter: invert(1);
+    filter: brightness(75%);
+}
+
+.i-link i {
+    padding: 5px;
+    font-size: 4em;
+}
+
+footer img {
+    width: 6em;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer h3 {
+    margin: 20px 0px;
+}
+
+footer ul {
+    padding: 0px;
+}
+
+@keyframes focus {
+    0% {
+        background-color: #26282d;
+        color: #e7e6e3;
+    }
+    100% {
+        background-color: #e7e6e3;
+        color: #26282d;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 576px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 576px;
+    }
+
+    .navbar.navbar-position {
+        width: calc(50vw - (576px / 2));
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        z-index: 1030;
+    }
+
+    .navbar-position .navbar-nav {
+        flex-direction: column;
+    }
+
+    nav .container {
+        padding: 0px;
+    }
+
+    nav a {
+        text-align: left;
+    }
+
+    nav li {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 768px;
+    }
+
+    .navbar.navbar-position {
+        width: calc(50vw - (768px / 2));
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        z-index: 1030;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 992px;
+    }
+
+    .navbar.navbar-position {
+        width: calc(50vw - (992px / 2));
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        z-index: 1030;
+    }
+
+    .zoomCursor {
+        cursor: zoom-in;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1031; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #1e2025;
+    padding: 20px;
+    width: 100%; /* Could be more or less, depending on screen size */
+    height: 100%;
+
+}
+
+.modal-content a:link,
+.modal-content a:visited {
+    background-color: transparent;
+    color: #e7e6e3;
+}
+
+.modal-content a:focus,
+.modal-content a:hover {
+    background-color: transparent;
+    color: #a0a0a0;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Gallery*/
+/* The grid: Four equal columns that floats next to each other */
+.columnGallery {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.columnGallery img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.columnGallery img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.rowGallery:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.containerGallery {
+    position: relative; /*relative*/
+    display: none;
+}
+
+/* Expanding image text */
+#imgtextGallery {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtnGallery {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pdf-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.pdf-container div{
+    width: 100%;
+    height: 100%;
+}
+
+/*Niels Cuyvers*/
+

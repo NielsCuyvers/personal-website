@@ -1,0 +1,30 @@
+/* stijlregels die enkel voor 404 van toepassing zijn */
+/*Niels Cuyvers*/
+body {
+    background-color: #fff;
+    color: #000;
+    background-image: url(/images/errorimg/404.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    max-width: 100%;
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        margin: auto;
+        max-width: 992px;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        border-radius: 0px 0px 50px 50px;
+    }
+}
+/*Niels Cuyvers*/
