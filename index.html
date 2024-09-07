@@ -18,6 +18,45 @@
     <link color="#5bbad5" href="./images/favicon/safari-pinned-tab.svg" rel="mask-icon">
 
     <script src="https://kit.fontawesome.com/5990b130e4.js" crossorigin="anonymous"></script>
+    <script>
+        function WriteAge(date) {
+            var ageDif = Date.now() - new Date(date);
+            var ageDate = new Date(ageDif);
+            ageInt = ageDate.getUTCFullYear() - 1970
+
+            switch (ageInt) {
+                case 1:
+                    document.write("one");
+                    break;
+                case 2:
+                    document.write("two");
+                    break;
+                case 3:
+                    document.write("three");
+                    break;
+                case 4:
+                    document.write("four");
+                    break;
+                case 5:
+                    document.write("five");
+                    break;
+                case 6:
+                    document.write("six");
+                    break;
+                case 7:
+                    document.write("seven");
+                    break;
+                case 8:
+                    document.write("eight");
+                    break;
+                case 9:
+                    document.write("nine");
+                    break;
+                default:
+                    document.write(ageInt);
+            }
+        }
+    </script>
 
     <meta content="#da532c" name="msapplication-TileColor">
     <meta content="#ffffff" name="theme-color">
@@ -78,30 +117,23 @@
                         </div>
                         <div class="col-12 col-lg-6 introTekst">
                             <p>
-                                I am a
+                                I'm a
                                 <script>
-                                    var ageDif = Date.now() - new Date("1997-12-02T00:00:00");
-                                    var ageDate = new Date(ageDif);
-                                    document.write(ageDate.getUTCFullYear() - 1970);
-                                </script>
-                                years old ITer who has been specialist in IT for the past
+                                    WriteAge("1997-12-02T00:00:00");
+                                </script>-year-old IT professional with
                                 <script>
-                                    var ageDif = Date.now() - new Date("2017-07-25T00:00:00");
-                                    var ageDate = new Date(ageDif);
-                                    document.write(ageDate.getUTCFullYear() - 1970);
-                                </script>
-                                years and consultancy for the last
+                                    WriteAge("2017-09-01T00:00:00");
+                                </script> years of experience in the field,
+                                including
                                 <script>
-                                    var ageDif = Date.now() - new Date("2022-07-25T00:00:00");
-                                    var ageDate = new Date(ageDif);
-                                    document.write(ageDate.getUTCFullYear() - 1970);
-                                </script>
-                                years.
-                                During these years I have learned alot about RPA and improving my softskills regarding
-                                communication and team work.
-                                But what stays the most with me is how much networking can improve your way of working
-                                and
-                                efficiently helping you with problem solving.
+                                    WriteAge("2022-07-25T00:00:00");
+                                </script> years in consultancy. Over the years, I've honed my skills in RPA (Robotic
+                                Process
+                                Automation) while also sharpening my communication and teamwork abilities. But one
+                                lesson stands out above the rest: the power of networking. I've discovered that building
+                                connections not only enhances how I work but also unlocks new, more efficient ways to
+                                solve problems. It's been a game-changer in how I approach challenges and collaborate
+                                with others.
                             </p>
                             <p>My hobbies are:</p>
                             <ul class="sumup-skills">
