@@ -1,0 +1,6 @@
+#Niels Cuyvers
+Options All -Indexes
+
+ErrorDocument 403 /html5/errorPages/403.html
+ErrorDocument 404 /html5/errorPages/404.html
+#Niels Cuyvers

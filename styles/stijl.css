@@ -13,16 +13,16 @@ body {
     text-align: center;
 }
 
-nav li a:link,
-nav li a:visited {
+.nav-link:link,
+.nav-link:visited {
     color: white;
 }
 
-nav li a:hover {
+.nav-link:hover {
     color: grey;
 }
 
-nav li a:active {
+.nav-link:active {
     color: white;
 }
 
@@ -42,19 +42,26 @@ nav li a:active {
     flex-direction: row
 }
 
-header{
+header {
     padding-top: 40px;
 }
 
-h1, h2, h3 {
+h1,
+h2 {
     font-family: Merriweather, sans-serif;
     padding: 10px;
     margin: 10px;
 }
 
+h2 {
+    border-bottom: 1px solid #fff;
+}
+
 p {
-    padding: 20px;
-    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1 {
@@ -69,8 +76,6 @@ h2 {
 }
 
 h3 {
-    padding: 5px;
-    margin: 5px;
     font-weight: normal;
 }
 
@@ -79,7 +84,7 @@ h4 {
 }
 
 
-.blok {
+.block {
     margin: 20px;
     padding: 0px;
     background-color: #26282d;
@@ -88,30 +93,65 @@ h4 {
     text-align: center;
 }
 
-.blok p {
-    margin: 20px;
+.block p {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.modal .blok {
-    padding: 5px;
+.modal .block {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.block-text {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 #intro {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-#wieBenIk .blok {
+.socials {
+    margin: 10px;
+    padding: 10px 30px;
 }
 
-#wieBenIk a{
+#whoAmI a {
     text-decoration: none;
 }
 
-.i-cv{
+#experiences ul {
+    padding: 0px;
+}
+
+.sumup-skills li {
+    margin-left: 20px;
+}
+
+#whoAmI .introTekst a:link,
+#whoAmI .introTekst a:visited,
+#experiences .block-text a:link,
+#experiences .block-text a:visited {
+    color: #e7e6e3;
+    filter: brightness(70%);
+    text-decoration: none;
+}
+
+#whoAmI .introTekst a:hover,
+#whoAmI .introTekst a:active,
+#experiences .block-text a:hover,
+#experiences .block-text a:active {
+    filter: brightness(60%);
+    text-decoration: underline;
+}
+
+.i-cv {
     position: relative;
 }
 
-.i-cv span{
+.i-cv span {
     padding: 0px;
     position: absolute;
     left: 0;
@@ -125,44 +165,37 @@ h4 {
     text-align: justify;
 }
 
-.stageTekst {
+.block-text {
     padding: 10px;
     text-align: justify;
 }
 
-.stage-list-item a:link,
-.stage-list-item a:visited {
-    background-color: #e7e6e3;
-    color: #474643 ;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 3px;
+.block-experience-head {
+    margin-bottom: 10px;
+    padding: 0px;
 }
 
-.stage-list-item a:focus{
-    filter: brightness(55%);
-}
-.stage-list-item a:hover {
-    -webkit-filter: invert(1);
-    filter: brightness(75%);
+.block-experience-head h3 {
+    margin: 0px !important;
 }
 
-#PVA, #verslag, #reflectie{
+.block-experience-head .caption-title {
+    margin: 0px !important;
+    padding: 0px !important;
+    filter: brightness(85%);
+}
+
+.caption-image {
+    filter: brightness(85%);
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#PVA,
+#verslag,
+#reflectie {
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-
-nav li a:hover {
-    color: grey;
-}
-
-nav li a:active {
-    color: white;
-}
-
-.categorie {
-    border-top: 1px solid #fff;
 }
 
 .projectDescriptie {
@@ -173,7 +206,7 @@ nav li a:active {
     filter: blur(5px);
 }
 
-#wieBenIk img {
+#whoAmI img {
     border-radius: 50%;
 }
 
@@ -181,20 +214,24 @@ nav li a:active {
     padding: 0px !important;
 }
 
-.projecten a:link {
+#content-ul {
+    padding: 0px !important;
+}
+
+.project a:link {
     background-color: #26282d;
     color: #e7e6e3;
     text-decoration: none;
     padding: 0px;
 }
 
-.projecten a:visited {
+.project a:visited {
     background-color: #26282d;
     color: #e7e6e3;
 }
 
-.projecten a:focus,
-.projecten a:hover {
+.project a:focus,
+.project a:hover {
     animation: focus;
     animation-duration: 0.5s;
     background-color: #e7e6e3;
@@ -211,18 +248,15 @@ ul {
 }
 
 #content p {
-    padding: 5px;
-    margin: 0px;
+    padding: 5px 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     line-height: 150%;
 }
 
 figure {
     margin: 10px;
     padding: 10px 30px;
-}
-
-article section p {
-    text-align: start;
 }
 
 footer {
@@ -244,9 +278,10 @@ footer h3 {
     font-weight: bold !important;
 }
 
-.i-link:focus{
+.i-link:focus {
     filter: brightness(55%);
 }
+
 .i-link:hover {
     -webkit-filter: invert(1);
     filter: brightness(75%);
@@ -278,6 +313,7 @@ footer ul {
         background-color: #26282d;
         color: #e7e6e3;
     }
+
     100% {
         background-color: #e7e6e3;
         color: #26282d;
@@ -368,26 +404,36 @@ footer ul {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1031; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1031;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: #1e2025;
     padding: 20px;
-    width: 100%; /* Could be more or less, depending on screen size */
+    width: 100%;
+    /* Could be more or less, depending on screen size */
     height: 100%;
 
 }
+
 
 .modal-content a:link,
 .modal-content a:visited {
@@ -443,7 +489,8 @@ footer ul {
 
 /* The expanding image container (positioning is needed to position the close button and the text) */
 .containerGallery {
-    position: relative; /*relative*/
+    position: relative;
+    /*relative*/
     display: none;
 }
 
@@ -466,29 +513,29 @@ footer ul {
     cursor: pointer;
 }
 
-.iframe-container{
+.iframe-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
 }
-.iframe-container iframe{
+
+.iframe-container iframe {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
-.pdf-container{
+.pdf-container {
     width: 100%;
     height: 100vh;
 }
 
-.pdf-container div{
+.pdf-container div {
     width: 100%;
     height: 100%;
 }
 
 /*Niels Cuyvers*/
-
