@@ -739,10 +739,8 @@
         btns.forEach(function (btn, index, arr) {
             if (btn != null) {
                 btn.onclick = function () {
-                    console.log("Opening mondal")
                     mainPage.style.display = "none"
                     nav.style.display = "none"
-                    console.log(mainPage)
                     modals[index].style.display = "block";
                     openedProject = btn;
                 }
@@ -750,12 +748,13 @@
         })
 
         for (var i = 0; i < spans.length; i++) {
-            console.log(i)
             spans[i].onclick = function () {
                 modals.forEach(function (modal, index, arr) {
-                    mainPage.style.display = "block"
-                    nav.style.display = navPositon
-                    modal.style.display = "none";
+                    if (modal != null) {
+                        mainPage.style.display = "block"
+                        nav.style.display = navPositon
+                        modal.style.display = "none";
+                    }
                 })
                 openedProject.scrollIntoView();
             }
